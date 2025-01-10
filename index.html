@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="Medical HTML Template">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
   <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="plugins/slick/slick.css">
   <link rel="stylesheet" href="plugins/slick/slick-theme.css">
@@ -92,276 +93,338 @@
         <li class="nav-item">
           <a class="nav-link" href="#doctors">Наши специалисты</a>
         </li>
-        <!-- <li class="nav-item">
-          <a class="nav-link" href="#services">Стоимость услуг</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#!" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Пациентам</a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#section1">Что такое ПЭТ КТ</a></li>
+            <li><a class="dropdown-item" href="#section2">Виды ПЭТ КТ</a></li>
+            <li><a class="dropdown-item" href="#section3">Мифы о ПЭТ КТ</a></li>
+            <li><a class="dropdown-item" href="#section4">Показания и противопоказания к ПЭТКТ</a></li>
+            <li><a class="dropdown-item" href="#section5">Как проходит исследование ПЭТ КТ</a></li>
+            <li><a class="dropdown-item" href="#section6">Как подготовиться к ПЭТКТ</a></li>
+            <li><a class="dropdown-item" href="#section7">10 наиболее частых вопросов о ПЭТ КТ</a></li>
+          </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#route">Маршрут пациента</a>
-        </li> -->
+        
       </ul>
     </div>
   </div>
 </nav>
 
-<div class="hero-slider">
-  <div class="slider-item slide1" style="background-image:url(images/slider/slider-bg-1.jpg)">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="content style text-center">
-            <h2 class="text-white text-bold mb-2" data-animation-in="slideInLeft">Высокий сервис</h2>
-            <p class="tag-text mb-4" data-animation-in="slideInRight">Центр оснащен самым современным оборудованием для раннего выявления онкологических патологий. Высокотехнологичный ПЭТ сканер Biograph Horizon (Siemens) сочетает возможности позитронно-эмиссионной и компьютерной томографии.</p>
-            <a href="about.html" class="btn btn-main btn-white" data-animation-in="slideInLeft" data-duration-in="1.2">Подробнее</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="slider-item" style="background-image:url(images/slider/slider-bg-2.jpg);">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="content style text-center">
-            <h2 class="text-white" data-animation-in="slideInRight">ПЭТ/КТ (PET/CT)</h2>
-            <p class="tag-text mb-4" data-animation-in="slideInRight" data-duration-in="0.6">Метод сочетает возможности позитронно-эмиссионной (ПЭТ) и компьютерной (КТ) томографий и позволяет с высокой долей уверенности установить наличие злокачественного образования.</p>
-            <a href="about.html" class="btn btn-main btn-white" data-animation-in="slideInRight" data-duration-in="1.2">Узнать больше</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="slider-item" style="background-image:url(images/slider/slider-bg-3.jpg)">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="content text-center style">
-            <h2 class="text-white text-bold mb-2" data-animation-in="slideInRight">Специалисты центра</h2>
-            <p class="tag-text mb-4" data-animation-in="slideInLeft">Исследования в центре проводятся бесплатно и доступны всем гражданам Казахстана в рамках ГОБМП (гарантированного объема медицинской помощи).</p>
-            <a href="about.html" class="btn btn-main btn-white" data-animation-in="slideInRight"  data-duration-in="1.2">Связаться с нами</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<section id="pet-ct" class="gallery bg-gray">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="section-title text-center">
-          <h3>
-            ПЭТ/КТ-диагностика 
-            <span> - это один из важнейших инструментов для борьбы с онкологическими заболеваниями</span>
-          </h3>
-        </div>
-      </div>
-      <div class="col-lg-2 col-md-6"></div>
-      <div class="col-lg-4 col-md-6">
-        <div class="gallery-item">
-          <img loading="lazy" src="images/gallery/gallery-01.gif" class="img-fluid" alt="gallery-image">
-          <a data-fancybox="images" href="images/gallery/gallery-01.gif"></a>
-          <h3>ПЭТ КТ с 68Ga-DOTA-TATE</h3>
-          <p>Радиофармпрепараты для диагностики нейроэндокринных опухолей.</p>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="gallery-item">
-          <img loading="lazy" src="images/gallery/gallery-02.gif" class="img-fluid" alt="gallery-image">
-          <a data-fancybox="images" href="images/gallery/gallery-02.gif"></a>
-          <h3>ПЭТ КТ с 68Ga-ПСМА</h3>
-          <p>Основные показания: рак предстательной железы.</p>
-        </div>
-      </div>
-      <div class="col-lg-2 col-md-6"></div>
-      <div class="col-lg-2 col-md-6"></div>
-      <div class="col-lg-4 col-md-6">
-        <div class="gallery-item">
-          <img loading="lazy" src="images/gallery/gallery-03.gif" class="img-fluid" alt="gallery-image">
-          <a data-fancybox="images" href="images/gallery/gallery-03.gif"></a>
-          <h3>ПЭТ КТ с 68Ga-FAPi</h3>
-          <p>Позволяет обнаружить микроскопические опухоли, недоступные другим методам.</p>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="gallery-item">
-          <img loading="lazy" src="images/gallery/gallery-04.gif" class="img-fluid" alt="gallery-image">
-          <a data-fancybox="images" href="images/gallery/gallery-04.gif"></a>
-          <h3>ПЭТ КТ с 18F-ФДГ</h3>
-          <p>Готовится индивидуально накануне исследования.</p>
-        </div>
-      </div>
-      
-    </div>
-  </div>
-</section>
 
-<section id="gobmp"  class="feature-section section bg-gray">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <div class="image-content">
+
+<div id="main-content">
+  <div class="hero-slider">
+    <div class="slider-item slide1" style="background-image:url(images/slider/slider-bg-1.jpg)">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="content style text-center">
+              <h2 class="text-white text-bold mb-2" data-animation-in="slideInLeft">Высокий сервис</h2>
+              <p class="tag-text mb-4" data-animation-in="slideInRight">Центр оснащен самым современным оборудованием для раннего выявления онкологических патологий. Высокотехнологичный ПЭТ сканер Biograph Horizon (Siemens) сочетает возможности позитронно-эмиссионной и компьютерной томографии.</p>
+              <a href="#appointmentForm" class="btn btn-main btn-white" data-animation-in="slideInLeft" data-duration-in="1.2">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider-item" style="background-image:url(images/slider/slider-bg-2.jpg);">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="content style text-center">
+              <h2 class="text-white" data-animation-in="slideInRight">ПЭТ/КТ (PET/CT)</h2>
+              <p class="tag-text mb-4" data-animation-in="slideInRight" data-duration-in="0.6">Метод сочетает возможности позитронно-эмиссионной (ПЭТ) и компьютерной (КТ) томографий и позволяет с высокой долей уверенности установить наличие злокачественного образования.</p>
+              <a href="#appointmentForm" class="btn btn-main btn-white" data-animation-in="slideInRight" data-duration-in="1.2">Узнать больше</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider-item" style="background-image:url(images/slider/slider-bg-3.jpg)">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="content text-center style">
+              <h2 class="text-white text-bold mb-2" data-animation-in="slideInRight">Специалисты центра</h2>
+              <p class="tag-text mb-4" data-animation-in="slideInLeft">Исследования в центре проводятся бесплатно и доступны всем гражданам Казахстана в рамках ГОБМП (гарантированного объема медицинской помощи).</p>
+              <a href="#appointmentForm" class="btn btn-main btn-white" data-animation-in="slideInRight"  data-duration-in="1.2">Связаться с нами</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section id="pet-ct" class="gallery bg-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
           <div class="section-title text-center">
-            <h3>Гарантированный объем бесплатной медицинской помощи</h3>
-            <p class="mb-0">Исследования в центре проводятся бесплатно и доступны всем гражданам Казахстана в рамках гарантированного объема бесплатной медицинской помощи (ГОБМП).</p>
+            <h3>
+              ПЭТ/КТ-диагностика 
+              <span> - это один из важнейших инструментов для борьбы с онкологическими заболеваниями</span>
+            </h3>
+            <a href="#appointmentForm" class="btn btn-style-one">Записаться на прием</a>
           </div>
-
-          <div class="row">
-            <div class="col-sm-6">
-              <div class="item">
-                <div class="icon-box">
-                  <figure>
-                    <img loading="lazy" src="images/resource/1.png" alt="ПЭТ/КТ-диагностика">
-                  </figure>
-                </div>
-                <h3 class="mb-2">ПЭТ/КТ-диагностика</h3>
-                <p>Данный метод дает возможность обнаружить малейшие очаги и получить трехмерное изображение организма человека с точными данными о локализации и границах новообразований.</p>
-              </div>
+        </div>
+        <div class="col-lg-2 col-md-6"></div>
+        <div class="col-lg-4 col-md-6">
+          <div class="gallery-item">
+            <img loading="lazy" src="images/gallery/gallery-01.gif" class="img-fluid" alt="gallery-image">
+            <a data-fancybox="images" href="images/gallery/gallery-01.gif"></a>
+            <h3>ПЭТ КТ с 68Ga-DOTA-TATE</h3>
+            <p>Радиофармпрепараты для диагностики нейроэндокринных опухолей.</p>
+           
+        </div>
+        
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="gallery-item">
+            <img loading="lazy" src="images/gallery/gallery-02.gif" class="img-fluid" alt="gallery-image">
+            <a data-fancybox="images" href="images/gallery/gallery-02.gif"></a>
+            <h3>ПЭТ КТ с 68Ga-ПСМА</h3>
+            <p>Основные показания: рак предстательной железы.</p>
+            
+          </div>
+        </div>
+        <div class="col-lg-2 col-md-6"></div>
+        <div class="col-lg-2 col-md-6"></div>
+        <div class="col-lg-4 col-md-6">
+          <div class="gallery-item">
+            <img loading="lazy" src="images/gallery/gallery-03.gif" class="img-fluid" alt="gallery-image">
+            <a data-fancybox="images" href="images/gallery/gallery-03.gif"></a>
+            <h3>ПЭТ КТ с 68Ga-FAPi</h3>
+            <p>Позволяет обнаружить микроскопические опухоли, недоступные другим методам.</p>
+            
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6">
+          <div class="gallery-item">
+            <img loading="lazy" src="images/gallery/gallery-04.gif" class="img-fluid" alt="gallery-image">
+            <a data-fancybox="images" href="images/gallery/gallery-04.gif"></a>
+            <h3>ПЭТ КТ с 18F-ФДГ</h3>
+            <p>Готовится индивидуально накануне исследования.</p>
+  
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  <section id="gobmp"  class="feature-section section bg-gray">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="image-content">
+            <div class="section-title text-center">
+              <h3>Гарантированный объем бесплатной медицинской помощи</h3>
+              <p class="mb-0">Исследования в центре проводятся бесплатно и доступны всем гражданам Казахстана в рамках гарантированного объема бесплатной медицинской помощи (ГОБМП).</p>
             </div>
-            <div class="col-sm-6">
-              <div class="item">
-                <div class="icon-box">
-                  <figure>
-                    <img loading="lazy" src="images/resource/2.png" alt="Современное оборудование">
-                  </figure>
+  
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="item">
+                  <div class="icon-box">
+                    <figure>
+                      <img loading="lazy" src="images/resource/1.png" alt="ПЭТ/КТ-диагностика">
+                    </figure>
+                  </div>
+                  <h3 class="mb-2">ПЭТ/КТ-диагностика</h3>
+                  <p>Данный метод дает возможность обнаружить малейшие очаги и получить трехмерное изображение организма человека с точными данными о локализации и границах новообразований.</p>
+                  <a href="#appointmentForm" class="btn btn-style-one mt-3">Записаться</a>
                 </div>
-                <h3 class="mb-2">Современное оборудование от Siemens</h3>
-                <p>Медицинские центры, оснащенные самой современной аппаратурой, очень важны для сохранения здоровья и увеличения продолжительности жизни граждан Казахстана.</p>
               </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="item">
-                <div class="icon-box">
-                  <figure>
-                    <img loading="lazy" src="images/resource/3.png" alt="Специалисты центра">
-                  </figure>
+              <div class="col-sm-6">
+                <div class="item">
+                  <div class="icon-box">
+                    <figure>
+                      <img loading="lazy" src="images/resource/2.png" alt="Современное оборудование">
+                    </figure>
+                  </div>
+                  <h3 class="mb-2">Современное оборудование от Siemens</h3>
+                  <p>Медицинские центры, оснащенные самой современной аппаратурой, очень важны для сохранения здоровья и увеличения продолжительности жизни граждан Казахстана.</p>
+                  <a href="#appointmentForm" class="btn btn-style-one mt-3">Записаться</a>
                 </div>
-                <h3 class="mb-2">Специалисты центра</h3>
-                <p>Высококвалифицированные врачи-радиологи, рентгенологи и онкологи.</p>
               </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="item">
-                <div class="icon-box">
-                  <figure>
-                    <img loading="lazy" src="images/resource/4.png" alt="Высокий сервис">
-                  </figure>
+              <div class="col-sm-6">
+                <div class="item">
+                  <div class="icon-box">
+                    <figure>
+                      <img loading="lazy" src="images/resource/3.png" alt="Специалисты центра">
+                    </figure>
+                  </div>
+                  <h3 class="mb-2">Специалисты центра</h3>
+                  <p>Высококвалифицированные врачи-радиологи, рентгенологи и онкологи.</p>
+                  <a href="#appointmentForm" class="btn btn-style-one mt-3">Записаться</a>
                 </div>
-                <h3 class="mb-2">Высокий сервис</h3>
-                <p>Оказываемых услуг и сокращенные сроки получения описания снимков.</p>
+              </div>
+              <div class="col-sm-6">
+                <div class="item">
+                  <div class="icon-box">
+                    <figure>
+                      <img loading="lazy" src="images/resource/4.png" alt="Высокий сервис">
+                    </figure>
+                  </div>
+                  <h3 class="mb-2">Высокий сервис</h3>
+                  <p>Оказываемых услуг и сокращенные сроки получения описания снимков.</p>
+                  <a href="#appointmentForm" class="btn btn-style-one mt-3">Записаться</a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+  
+  <section id="doctors" class="service-section bg-gray section">
+    <div class="container">
+      <div class="section-title text-center">
+        <h3>Наши Врачи</h3>
+        <p>Высококвалифицированные специалисты, готовые оказать помощь в любое время.</p>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="items-container">
+            <div class="item">
+              <div class="inner-box">
+                <div class="img_holder">
+                  <a href="#">
+                    <img loading="lazy" src="images/gallery/1.jpg" alt="images" class="img-fluid">
+                  </a>
+                </div>
+                <div class="image-content text-center">
+                  <span>Зав. отд. и врач радиоизотопной диагностики</span>
+                  <a href="#">
+                    <h6>Әлішеров Ғалымжан Темірланұлы</h6>
+                  </a>
+                  <a href="#appointmentForm" class="btn btn-style-one mt-3">Записаться</a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="inner-box">
+                <div class="img_holder">
+                  <a href="#">
+                    <img loading="lazy" src="images/gallery/2.jpg" alt="images" class="img-fluid">
+                  </a>
+                </div>
+                <div class="image-content text-center">
+                  <span>Инженер по РБ и мед. оборудованию</span>
+                  <a href="#">
+                    <h6>Икрамов Ашим Бекмұратұлы</h6>
+                  </a>
+                  <a href="#appointmentForm" class="btn btn-style-one mt-3">Записаться</a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="inner-box">
+                <div class="img_holder">
+                  <a href="#">
+                    <img loading="lazy" src="images/gallery/3.jpg" alt="images" class="img-fluid">
+                  </a>
+                </div>
+                <div class="image-content text-center">
+                  <span>Врач радиоизотопной диагностики</span>
+                  <a href="#">
+                    <h6>Ережеп Ақерке Алмасқызы</h6>
+                  </a>
+                  <a href="#appointmentForm" class="btn btn-style-one mt-3">Записаться</a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="inner-box">
+                <div class="img_holder">
+                  <a href="#">
+                    <img loading="lazy" src="images/gallery/1.jpg" alt="images" class="img-fluid">
+                  </a>
+                </div>
+                <div class="image-content text-center">
+                  <span>Зав. отд. и врач радиоизотопной диагностики</span>
+                  <a href="#">
+                    <h6>Әлішеров Ғалымжан Темірланұлы</h6>
+                  </a>
+                  <a href="#appointmentForm" class="btn btn-style-one mt-3">Записаться</a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="inner-box">
+                <div class="img_holder">
+                  <a href="#">
+                    <img loading="lazy" src="images/gallery/2.jpg" alt="images" class="img-fluid">
+                  </a>
+                </div>
+                <div class="image-content text-center">
+                  <span>Инженер по РБ и мед. оборудованию</span>
+                  <a href="#">
+                    <h6>Икрамов Ашим Бекмұратұлы</h6>
+                  </a>
+                  <a href="#appointmentForm" class="btn btn-style-one mt-3">Записаться</a>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="inner-box">
+                <div class="img_holder">
+                  <a href="#">
+                    <img loading="lazy" src="images/gallery/3.jpg" alt="images" class="img-fluid">
+                  </a>
+                </div>
+                <div class="image-content text-center">
+                  <span>Врач радиоизотопной диагностики</span>
+                  <a href="#">
+                    <h6>Ережеп Ақерке Алмасқызы</h6>
+                  </a>
+                  <a href="#appointmentForm" class="btn btn-style-one mt-3">Записаться</a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+<div id="content" class="container">
+  <p>Выберите пункт меню, чтобы увидеть содержимое.</p>
+</div>
 
-<section id="doctors" class="service-section bg-gray section">
+
+
+<section class="appointment-section section">
   <div class="container">
-    <div class="section-title text-center">
-      <h3>Наши Врачи</h3>
-      <p>Высококвалифицированные специалисты, готовые оказать помощь в любое время.</p>
-    </div>
-    <div class="row">
+    <div class="row justify-content-center">
       <div class="col-lg-12">
-        <div class="items-container">
-          <div class="item">
-            <div class="inner-box">
-              <div class="img_holder">
-                <a href="service.html">
-                  <img loading="lazy" src="images/gallery/1.jpg" alt="images" class="img-fluid">
-                </a>
-              </div>
-              <div class="image-content text-center">
-                <span>Зав. отд. и врач радиоизотопной диагностики</span>
-                <a href="service.html">
-                  <h6>Әлішеров Ғалымжан Темірланұлы</h6>
-                </a>
-              </div>
-            </div>
+        <div class="contact-area">
+          <div class="section-title text-center">
+            <h3>Запись на прием</h3>
           </div>
-          <div class="item">
-            <div class="inner-box">
-              <div class="img_holder">
-                <a href="service.html">
-                  <img loading="lazy" src="images/gallery/2.jpg" alt="images" class="img-fluid">
-                </a>
-              </div>
-              <div class="image-content text-center">
-                <span>Инженер по РБ и мед. оборудованию</span>
-                <a href="service.html">
-                  <h6>Икрамов Ашим Бекмұратұлы</h6>
-                </a>
-              </div>
+          <form id="appointmentForm">
+            <div class="form-group">
+              <input class="form-control" type="text" id="name" name="Name" placeholder="Ваше имя" required="">
             </div>
-          </div>
-          <div class="item">
-            <div class="inner-box">
-              <div class="img_holder">
-                <a href="service.html">
-                  <img loading="lazy" src="images/gallery/3.jpg" alt="images" class="img-fluid">
-                </a>
-              </div>
-              <div class="image-content text-center">
-                <span>Врач радиоизотопной диагностики</span>
-                <a href="service.html">
-                  <h6>Ережеп Ақерке Алмасқызы</h6>
-                </a>
-              </div>
+            <div class="form-group">
+              <input class="form-control" type="text" id="phone" name="Phone" placeholder="Номер телефона" required="">
             </div>
-          </div>
-          <div class="item">
-            <div class="inner-box">
-              <div class="img_holder">
-                <a href="service.html">
-                  <img loading="lazy" src="images/gallery/1.jpg" alt="images" class="img-fluid">
-                </a>
-              </div>
-              <div class="image-content text-center">
-                <span>Зав. отд. и врач радиоизотопной диагностики</span>
-                <a href="service.html">
-                  <h6>Әлішеров Ғалымжан Темірланұлы</h6>
-                </a>
-              </div>
+            <div class="form-group">
+              <input class="form-control" type="text" id="datetimepicker" name="DateTime" placeholder="Выберите дату и время" required="">
             </div>
-          </div>
-          <div class="item">
-            <div class="inner-box">
-              <div class="img_holder">
-                <a href="service.html">
-                  <img loading="lazy" src="images/gallery/2.jpg" alt="images" class="img-fluid">
-                </a>
-              </div>
-              <div class="image-content text-center">
-                <span>Инженер по РБ и мед. оборудованию</span>
-                <a href="service.html">
-                  <h6>Икрамов Ашим Бекмұратұлы</h6>
-                </a>
-              </div>
+            <div class="form-group text-center">
+              <button type="submit" class="btn-style-one">Записаться</button>
             </div>
-          </div>
-          <div class="item">
-            <div class="inner-box">
-              <div class="img_holder">
-                <a href="service.html">
-                  <img loading="lazy" src="images/gallery/3.jpg" alt="images" class="img-fluid">
-                </a>
-              </div>
-              <div class="image-content text-center">
-                <span>Врач радиоизотопной диагностики</span>
-                <a href="service.html">
-                  <h6>Ережеп Ақерке Алмасқызы</h6>
-                </a>
-              </div>
-            </div>
-          </div>
-          
+          </form>
+          <div id="responseMessage" style="margin-top: 10px; display: none;"></div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
 
 <footer class="footer-main">
   <div class="footer-top">
@@ -376,7 +439,6 @@
                 </a>
               </figure>
             </div>
-            <p>г.Алматы, ул.Толе би 291/1</p>
             <ul class="location-link">
               <li class="item">
                 <i class="fas fa-map-marker-alt"></i>
@@ -434,5 +496,101 @@
 <script src="plugins/fancybox/jquery.fancybox.min.js" defer></script>
 <script src="plugins/google-map/gmap.js" defer></script>
 <script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+  flatpickr("#datetimepicker", {
+    enableTime: true, 
+    dateFormat: "Y-m-d H:i", 
+    time_24hr: true, 
+    minDate: "today"
+  });
+
+  document.getElementById("appointmentForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const url = "https://script.google.com/macros/s/AKfycbysQnw1HspsSXZ0DVaGaNrJNFludScO6vuXSEepl4qmnGYaaM3-GHweiKYb3l2SrHCGDg/exec"; 
+
+    const data = {
+      Name: document.getElementById("name").value,
+      Phone: document.getElementById("phone").value,
+      DateTime: document.getElementById("datetimepicker").value,
+    };
+
+    fetch(url, {
+      method: "POST",
+      mode: "no-cors", 
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(data),
+    })
+      .then(() => {
+        const messageDiv = document.getElementById("responseMessage");
+        messageDiv.style.color = "green";
+        messageDiv.textContent = "Данные успешно отправлены!";
+        messageDiv.style.display = "block";
+      })
+      .catch((error) => {
+        const messageDiv = document.getElementById("responseMessage");
+        messageDiv.style.color = "red";
+        messageDiv.textContent = "Произошла ошибка при отправке данных: " + error.message;
+        messageDiv.style.display = "block";
+      });
+
+  });
+});
+
+</script>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const mainContent = document.getElementById("main-content");
+  const content = document.getElementById("content");
+
+  const loadContent = (hash) => {
+    const sectionId = hash.substring(1); 
+    console.log(`Загружается раздел: ${sectionId}`);
+    if (["pet-ct", "gobmp", "doctors"].includes(sectionId)) {
+      mainContent.style.display = "block"; 
+      content.style.display = "none";
+      return; 
+    }
+
+    fetch(`pages/info.html`)
+      .then((response) => {
+        if (!response.ok) throw new Error("Network error");
+        return response.text();
+      })
+      .then((html) => {
+        const tempDiv = document.createElement("div");
+        tempDiv.innerHTML = html;
+
+        const section = tempDiv.querySelector(`#${sectionId}`);
+        if (section) {
+          content.innerHTML = section.outerHTML;
+          mainContent.style.display = "none";
+          content.style.display = "block"; 
+        } else {
+          content.innerHTML = "<p>Раздел не найден. Попробуйте выбрать другой пункт меню.</p>";
+        }
+      })
+      .catch(() => {
+        content.innerHTML = "<p>Не удалось загрузить содержимое. Проверьте соединение.</p>";
+      });
+  };
+
+  const updateContentOnHashChange = () => {
+    if (window.location.hash) {
+      loadContent(window.location.hash);
+    } else {
+      mainContent.style.display = "block";
+      content.style.display = "none";
+    }
+  };
+  window.addEventListener("hashchange", updateContentOnHashChange);
+  updateContentOnHashChange(); 
+});
+
+
+
+</script>
 </body>
 </html>
